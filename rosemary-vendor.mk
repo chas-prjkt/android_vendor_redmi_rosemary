@@ -32,6 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/redmi/rosemary/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/redmi/rosemary/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/redmi/rosemary/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/redmi/rosemary/proprietary/vendor/bin/atcid:$(TARGET_COPY_OUT_VENDOR)/bin/atcid \
@@ -2617,6 +2618,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libwifi-hal-mtk \
     SoterService \
+    HotwordEnrollmentOKGoogleCORTEXM4 \
+    HotwordEnrollmentXGoogleCORTEXM4 \
     ImsService \
     mediatek-common \
     mediatek-framework \
@@ -2624,6 +2627,7 @@ PRODUCT_PACKAGES += \
     mediatek-ims-common \
     mediatek-ims-legacy \
     mediatek-telecom-common \
+    com.android.hotwordenrollment.common.util \
     mediatek-telephony-base \
     mediatek-telephony-common \
     mediatek-wfo-legacy \
